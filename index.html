@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Plans & Pricing</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="head">
+  <h1>Choose your plan</h1>
+  <p>Simple hosting plans for every stage of your project.</p>
+  <div class="controls">
+    <div class="switch">
+      <span id="lbl-m" class="on">Monthly</span>
+      <button id="toggle" role="switch" aria-checked="false" aria-label="Bill yearly"><i></i></button>
+      <span id="lbl-y">Yearly <em>2 months free</em></span>
+    </div>
+    <div class="filters" role="group" aria-label="Filter plans">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="basic">Basic</button>
+      <button class="filter" data-filter="premium">Premium</button>
+    </div>
+  </div>
+</header>
+<main id="cards" class="grid" aria-live="polite"></main>
+<script src="script.js"></script>
+</body>
+</html>
